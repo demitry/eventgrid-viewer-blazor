@@ -6,9 +6,9 @@
 #- [-g] resource group name - The name of the Azure resource group ie rg-cse-egvb-dev  (required)"
 #- [-s] site name - The name of the Azure web app ie as-cse-egvb-dev (required)"
 #- [-p] hosting plan name - The name of the Azure app service plan ie asp-cse-egvb-dev (required)"
-#- [-l] location - Azure location ie eastus, westus (required)"
-#- [-r] repo url - The git repository where the codebase is located ie https://github.com/Azure-Samples/eventgrid-viewer-blazor.git (required)"
-#- [-b] repo branch - The git repository branch to use ie main (required)"
+#- [-l] location - Azure location ie westeurope, westus (required)"
+#- [-r] repo url - The git repository where the codebase is located ie https://github.com/demitry/eventgrid-viewer-blazor.git (required)"
+#- [-b] repo branch - The git repository branch to use ie dproject branch (required)"
 #- [-a] enable auth - The flag to enable Azure AD authentication.  Default is false (optional)"
 #- [-k] keyvault name - The name of the Azure Keyvault to store Azure AD secrets if enabling authentication.  Default is none (optional)"
 #- [-d] azure ad domain - The Azure AD Primary Domain if enabling authentication ie youraccount.onmicrosoft.com.  Default is none (optional)"
@@ -26,16 +26,16 @@ function usage() {
     echo -e "\t-g \t The name of the Azure resource group ie rg-cse-egvb-dev  (required)"
     echo -e "\t-s \t The name of the Azure web app ie as-cse-egvb-dev (required)"
     echo -e "\t-p \t The name of the Azure app service plan ie asp-cse-egvb-dev (required)"
-    echo -e "\t-l \t Azure location ie eastus, westus (required)"
-    echo -e "\t-r \t The git repository where the codebase is located ie https://github.com/Azure-Samples/eventgrid-viewer-blazor.git (required)"
-    echo -e "\t-b \t The git repository branch to use ie main (required)"
+    echo -e "\t-l \t Azure location ie westeurope, westus (required)"
+    echo -e "\t-r \t The git repository where the codebase is located ie https://github.com/demitry/eventgrid-viewer-blazor.git (required)"
+    echo -e "\t-b \t The git repository branch to use ie dproject branch (required)"
     echo -e "\t-a \t The flag to enable Azure AD authentication.  Default is false (optional)"
     echo -e "\t-k \t The name of the Azure Keyvault to store Azure AD secrets if enabling authentication.  Default is none (optional)"
     echo -e "\t-d \t The azure ad domain - The Azure AD Primary Domain if enabling authentication ie youraccount.onmicrosoft.com.  Default is none (optional)"
     echo -e "\t-h \t Help (optional)"
     echo
     echo "Example:"
-    echo -e "./azuredeploy.sh -g rg-cse-egvb-dev -s as-cse-egvb-dev -p asp-cse-egvb-dev -l eastus -r https://github.com/Azure-Samples/eventgrid-viewer-blazor.git -b main -k kv-cse-egvb-dev -d microsoft.onmicrosoft.com -a"
+    echo -e "./azuredeploy.sh -g rg-cse-egvb-dev -s as-cse-egvb-dev -p asp-cse-egvb-dev -l westeurope -r https://github.com/demitry/eventgrid-viewer-blazor.git -b dproject -k kv-cse-egvb-dev -d microsoft.onmicrosoft.com -a"
 }
 
 parent_path=$(

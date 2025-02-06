@@ -13,7 +13,7 @@ urlFragment: eventgrid-viewer-blazor
 
 The EventGrid Viewer Blazor application can be used to view Azure EventGrid messages in realtime using ASP.Net Core Blazor and SignalR.  For those who would like to secure the application, the EventGrid Viewer Blazor application can be easily configured via appsettings to use Azure AD authentication, Azure KeyVault & Managed Identities.
 
-![Build](https://github.com/Azure-Samples/eventgrid-viewer-blazor/workflows/Build/badge.svg)
+![Build](https://github.com/demitry/eventgrid-viewer-blazor/workflows/Build/badge.svg)
 
 ![overview diagram](./docs/images/overview.drawio.svg)
 
